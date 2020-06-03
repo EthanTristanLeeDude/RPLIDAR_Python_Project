@@ -45,7 +45,7 @@ while (1):
     quality = ord(ser.read(1))/4    # the ord function converts the character to an int
     angle_LSB = ord(ser.read(1))
     angle_MSB = ord(ser.read(1))
-    angle = (angle_MSB *256 + angle_LSB) /128
+    angle = (angle_MSB *256 + angle_LSB) /128   #in degrees
     distance_LSB = ord(ser.read(1))
     distance_MSB = ord(ser.read(1)) 
 
