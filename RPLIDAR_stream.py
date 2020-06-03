@@ -26,8 +26,8 @@ ser.open()
 ser.write(start_scan)
 
 
-x= ser.read(7)      #this reads 1 character
-x = binascii.hexlify(x)
+x= ser.read(7)              #this reads 1 character
+x = binascii.hexlify(x)     
 print(x)
 
 
@@ -42,14 +42,14 @@ h=0
 count =0
 print ("0 deg\t45 deg\t90 deg\t135 deg\t180 deg\t225 deg\t270 deg\t315 deg")
 while (1):
-    quality = ord(ser.read(1))/4     #this reads 1 character
+    quality = ord(ser.read(1))/4    # the ord function converts the character to an int
     angle_LSB = ord(ser.read(1))
     angle_MSB = ord(ser.read(1))
     angle = (angle_MSB *256 + angle_LSB) /128
     distance_LSB = ord(ser.read(1))
-    distance_MSB = ord(ser.read(1)) # the ord function converts the character to an int
+    distance_MSB = ord(ser.read(1)) 
 
-    distance = (distance_MSB*256 + distance_LSB)/4
+    distance = (distance_MSB*256 + distance_LSB)/4 # in mm
 
     if quality ==15:
         if distance != 0:
@@ -81,9 +81,3 @@ while (1):
         f=0
         g=0
         h=0
-        
-                
-        
-
-        
-    
