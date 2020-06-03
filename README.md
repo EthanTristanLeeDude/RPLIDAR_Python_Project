@@ -1,6 +1,4 @@
 # RPLIDAR_Python_Project
-Demonstrates how to interface to the RPLIDAR A1M8 from Slamtec using Python
-
 This code demonstrates how to interface with the RPLIDAR A1M8 from Slamtec using Python. The initial version of the code does the following:
 
 1. Uses the serial, struct and serial libraries 
