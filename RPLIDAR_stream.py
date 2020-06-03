@@ -8,10 +8,10 @@ import struct
 import binascii
 
 
-start_scan = "\xA5\x20"                         ##hex
-express_scan = "\xA5\x5A\x05\x00\x00\x40\x81"   ##hex
-get_info = "\xA5\x50"                           ##hex
-force_scan = "\xA5\x21"                         ##hex
+start_scan = "\xA5\x20"                         ##hex A520
+express_scan = "\xA5\x5A\x05\x00\x00\x40\x81"   ##hex A55A0500004081
+get_info = "\xA5\x50"                           ##hex A550
+force_scan = "\xA5\x21"                         ##hex A521
 
 import serial.tools.list_ports as port_list
 ports = list(port_list.comports())
@@ -26,7 +26,7 @@ ser.open()
 ser.write(start_scan)
 
 
-x= ser.read(7)              #this reads 1 character
+x= ser.read(7)              #this reads 7 characters
 x = binascii.hexlify(x)     
 print(x)
 
