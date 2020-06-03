@@ -1,11 +1,5 @@
-##I have C232HD's connected with RX and TX crossed
-##one is on COM13, the other is on COM11
-##I connect to 13 in this program, and 11 in CoolTerm
-##I've noiced that sometimes I have to disconnect and reconnect
-##the C232HD's to get the program to run
-
-##I think this program uses pyserial
-## you may need to run: python -m pip install pyserial
+## if the serial commands don't work on your machine, you may need to install pyserial
+## python -m pip install pyserial
 ## from the window command prompt
 
 
