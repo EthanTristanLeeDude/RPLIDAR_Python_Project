@@ -13,10 +13,11 @@ RPLIDAR_stream.py does the following:
 8. Periodically outputs the LIDAR scan distance, in mm, for 8 discrete angles in degrees (0, 45, 90, 135, 180, 225, 270, 315).
 9. If any of the scan angles were invalid, it will output zero for that case.
 
-I purchased the LIDAR unit from here: <a href = https://www.robotshop.com/en/rplidar-a1m8-360-degree-laser-scanner-development-kit.html>RPLidar A1M8 - 360 Degree Laser Scanner Development Kit</a>.
-
 RPLIDAR_static_map.py build more functionallity on top of RPLIDAR_stream.py: 
 
 1. Generates a static map of its surroundings. 
 2. the image is 2400 pixels x 2400 pixels with a resolution of 1 cm^2 per pixel, and an angular resolution of 5 degrees.  
 3. The top of the image is the 0 degree direction.
+
+
+I purchased the LIDAR unit from here: <a href = https://www.robotshop.com/en/rplidar-a1m8-360-degree-laser-scanner-development-kit.html>RPLidar A1M8 - 360 Degree Laser Scanner Development Kit</a>.
