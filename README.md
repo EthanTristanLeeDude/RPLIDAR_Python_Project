@@ -1,5 +1,7 @@
 # RPLIDAR_Python_Project
-This code demonstrates how to interface with the RPLIDAR A1M8 from Slamtec using Python. The initial version of the code does the following:
+This code demonstrates how to interface with the RPLIDAR A1M8 from Slamtec using Python. 
+
+RPLIDAR_stream.py does the following:
 
 1. Uses the serial, struct and serial libraries.
 2. Uses hex encoded strings to send commands to the RPLIDAR unit (start_scan is the only one being used initially).
@@ -12,3 +14,9 @@ This code demonstrates how to interface with the RPLIDAR A1M8 from Slamtec using
 9. If any of the scan angles were invalid, it will output zero for that case.
 
 I purchased the LIDAR unit from here: <a href = https://www.robotshop.com/en/rplidar-a1m8-360-degree-laser-scanner-development-kit.html>RPLidar A1M8 - 360 Degree Laser Scanner Development Kit</a>.
+
+RPLIDAR_static_map.py build more functionallity on top of RPLIDAR_stream.py: 
+
+1. Generates a static map of its surroundings. 
+2. the image is 2400 pixels x 2400 pixels with a resolution of 1 cm^2 per pixel, and an angular resolution of 5 degrees.  
+3. The top of the image is the 0 degree direction.
